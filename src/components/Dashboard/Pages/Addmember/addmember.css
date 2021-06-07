@@ -1,0 +1,140 @@
+.admin_container {
+  width: 80%;
+  margin: 20px auto;
+}
+
+.admin_container form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 60%;
+  margin: auto auto;
+  background-color: white;
+  -webkit-box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.3), -2px -2px 2px rgba(0, 0, 0, 0.3);
+          box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.3), -2px -2px 2px rgba(0, 0, 0, 0.3);
+  padding: 20px 20px 10px 20px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.admin_container form h1 {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #fa7806;
+}
+
+.admin_container form label {
+  font-size: 19px;
+  letter-spacing: 1.5px;
+  margin: 8px 0 0 5px;
+  font-weight: 500;
+}
+
+.admin_container form input {
+  transition: all 0.5s;
+  font-size: 18px;
+  padding: 5px;
+  border: none;
+  border-bottom: 2px solid #fa78068e;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+
+.admin_container form input:focus {
+  outline: none;
+  border-bottom: 2px solid #fa7806;
+}
+
+.admin_container form .age_gender {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.admin_container form .age_gender .age input {
+  width: 50%;
+  margin: 10px  5px;
+}
+
+.admin_container form .age_gender .gender {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.admin_container form .age_gender .gender input {
+  font-size: 25px;
+}
+
+.admin_container form .age_gender .gender label {
+  margin: 0 5px;
+}
+
+.admin_container form .address_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.admin_container form .address_container h1 {
+  margin: 10px auto;
+  color: #fa7806;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.admin_container form .btn_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 10px;
+}
+
+.admin_container form .btn_container .btn {
+  padding: 8px 8px;
+  border: none;
+  cursor: pointer;
+  -webkit-box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+          box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  font-weight: 500;
+  background-color: #fa7806;
+  color: white;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 18px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+/*# sourceMappingURL=addmember.css.map */

@@ -1,0 +1,79 @@
+$primary_color:#fa7806;
+$secondar_color:#77bb4d;
+.active{
+        border: 2px solid $primary_color;
+        border-radius: 7px;
+        background-color: #fff;
+        box-shadow: 3px 3px 5px rgba(0,0,0,0.6);
+    }
+.navContainer{
+          margin-top: 10px;
+          background-color: white;
+          box-shadow: 3px 3px 5px rgba(0,0,0,0.6);
+          padding:5px 20px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+       
+          .left_side{
+                  display: flex;  
+                  align-items: center;
+                  .brandName{
+                            margin-left: 20px;
+                            font-size: 40px;
+                            h3{
+                              // color: #77bb4d;
+                              color:$primary_color;
+                     }
+                  }
+          .logo_container{
+                    height: 100px;
+                    width: 100px;
+                  
+                  
+                    img{
+                              height: 100%;
+                              width: 100%;
+                              object-fit: contain;
+                    }
+                    
+          }
+}
+          .navItem ul{
+                    display: flex;
+                    list-style-type: none;
+                    text-decoration: none;
+                    .textLink1{
+                            padding:0 10px !important;
+                    }
+                    .textLink,.textLink1{
+                              cursor: pointer;
+                              padding:10px 10px;
+                              text-decoration: none;
+                             
+                              font-size: 1.2em;
+                              letter-spacing: 1px;
+                              text-transform: uppercase;
+                              color:$primary_color;
+                              font-weight: 600;
+                            
+                              &:hover{
+                                        //color: #8bf34a;
+                                        border: 2px solid $primary_color;
+                                        border-radius: 7px;
+                                        background-color: #fff;
+                                        box-shadow: 3px 3px 5px rgba(0,0,0,0.6);
+                                        -webkit-border-radius: 7px;
+                                        -moz-border-radius: 7px;
+                                        -ms-border-radius: 7px;
+                                        -o-border-radius: 7px;
+}
+                    
+                    }
+                   
+
+          }
+}
+
+
+

@@ -1,0 +1,23 @@
+*{
+          padding: 0;
+          margin: 0;
+          box-sizing: border-box;
+      
+}
+
+.App{
+          // position: relative;
+          // height: 50vh;
+          z-index: 1000;
+          background-color: #f0f2f5;
+          // background-color: #fffef7;
+          overflow: hidden;
+          .bottomNav{
+                    overflow: hidden;
+                    position: fixed;
+                    bottom: 0;
+                    z-index: 10000;
+                    width: 100%;
+        
+          }
+}

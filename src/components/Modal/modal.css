@@ -1,0 +1,109 @@
+.modalContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 10000000;
+}
+
+.modalContainer .modalContent {
+  background-color: white;
+  width: 50%;
+  margin: auto;
+  z-index: 10000000000;
+}
+
+.modalContainer .modalContent .modalHeader {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 30px;
+}
+
+.modalContainer .modalContent .modalHeader h1 {
+  font-size: 1.4em;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.modalContainer .modalContent .modalHeader h2 {
+  font-size: 1.8em;
+  font-weight: 500;
+  cursor: pointer;
+  background-color: red;
+  color: #ffffff;
+  padding: 0px 14px 7px 14px;
+  border-radius: 5px;
+}
+
+.modalContainer .modalContent .modalForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 90%;
+  margin: auto;
+  padding: 20px;
+}
+
+.modalContainer .modalContent .modalForm label {
+  font-size: 1.4em;
+  margin: 7px 0;
+}
+
+.modalContainer .modalContent .modalForm input {
+  padding: 7px 4px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-size: 1.1em;
+  border-bottom: 2px solid blueviolet;
+}
+
+.modalContainer .modalContent .modalFooter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 15px;
+}
+
+.modalContainer .modalContent .modalFooter button {
+  background-color: blueviolet;
+  padding: 8px 10px;
+  color: white;
+  font-size: 1.1em;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+/*# sourceMappingURL=modal.css.map */

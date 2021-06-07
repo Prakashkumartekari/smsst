@@ -1,0 +1,57 @@
+.navBottomContainer {
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.navBottomContainer .navBottomItem ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  text-decoration: none;
+  padding: 8px 0;
+}
+
+.navBottomContainer .navBottomItem ul .textLink1 {
+  padding: 0 10px !important;
+}
+
+.navBottomContainer .navBottomItem ul .textLink, .navBottomContainer .navBottomItem ul .textLink1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 0 10px;
+  letter-spacing: .4px;
+  text-transform: uppercase;
+  color: #fa780694;
+  font-weight: 500;
+}
+
+.navBottomContainer .navBottomItem ul .textLink span, .navBottomContainer .navBottomItem ul .textLink1 span {
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.navBottomContainer .navBottomItem ul .textLink:hover, .navBottomContainer .navBottomItem ul .textLink .active1, .navBottomContainer .navBottomItem ul .textLink1:hover, .navBottomContainer .navBottomItem ul .textLink1 .active1 {
+  color: #fa7806;
+}
+/*# sourceMappingURL=navbottom.css.map */

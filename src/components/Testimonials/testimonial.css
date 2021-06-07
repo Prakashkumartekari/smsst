@@ -1,0 +1,58 @@
+.testi_section {
+  background-color: #D0AA61;
+  padding: 50px 0;
+}
+
+.testi_section .testi_container {
+  width: 80%;
+  margin: 10px auto;
+}
+
+.testi_section .testi_container h1 {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 40px;
+  color: #fa7806;
+  margin: 20px 0;
+}
+
+.testi_section .testi_container .mySwiper {
+  margin: 40px 0;
+  padding: 40px 0;
+}
+
+.testi_section .testi_container .mySwiper .myslide {
+  background-color: white;
+  padding: 50px 20px;
+}
+
+.testi_section .testi_container .mySwiper .myslide p {
+  position: relative;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+.testi_section .testi_container .mySwiper .myslide .quote_icon_left, .testi_section .testi_container .mySwiper .myslide .quote_icon_right {
+  color: #fa7806;
+  opacity: 0.3;
+  font-size: 30px;
+}
+
+.testi_section .testi_container .mySwiper .myslide .quote_icon_left {
+  margin-right: 10px;
+}
+
+.testi_section .testi_container .mySwiper .myslide .quote_icon_right {
+  margin-left: 10px;
+  position: absolute;
+  bottom: -10px;
+}
+
+.testi_section .testi_container .mySwiper .myslide .quote_name {
+  margin-top: 20px;
+  font-size: 25px;
+  letter-spacing: 1.5px;
+  text-transform: capitalize;
+}
+/*# sourceMappingURL=testimonial.css.map */

@@ -1,8 +1,8 @@
 import { configureStore } from '@reduxjs/toolkit';
-import counterReducer from '../features/counter/counterSlice';
+import ClickeventReducer from "../features/modal/Clickevent";
 
 export const store = configureStore({
   reducer: {
-    counter: counterReducer,
+    ClickeventReducer,
   },
 });

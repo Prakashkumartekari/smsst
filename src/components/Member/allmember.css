@@ -1,0 +1,40 @@
+.member_wrapper {
+  width: 90%;
+  margin: 20px auto;
+}
+
+.member_wrapper .member_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.member_card {
+  background-color: white;
+  -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+          box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+  margin: 15px 10px;
+  width: 200px;
+  height: 100%;
+}
+
+.img_container {
+  height: 200px;
+  width: 100%;
+}
+
+.img_container img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+/*# sourceMappingURL=allmember.css.map */

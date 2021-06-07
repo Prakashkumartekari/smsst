@@ -1,0 +1,103 @@
+.addslider_section {
+  width: 80%;
+  margin: 20px auto;
+}
+
+.addslider_section .addslider_container {
+  width: 60%;
+  margin: 20px auto;
+  background-color: white;
+  -webkit-box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.3), -3px -3px 2px rgba(0, 0, 0, 0.3);
+          box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.3), -3px -3px 2px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.addslider_section .addslider_container h1 {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #fa7806;
+}
+
+.addslider_section .addslider_container hr {
+  margin: 10px auto;
+  width: 90%;
+}
+
+.addslider_section .addslider_container label {
+  font-size: 22px;
+  margin: 15px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  letter-spacing: 1px;
+}
+
+.addslider_section .addslider_container input {
+  font-size: 18px;
+  padding: 7px 10px;
+}
+
+.addslider_section .addslider_container .addnews_image_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.addslider_section .addslider_container .addnews_image_container label {
+  font-weight: 500;
+  color: #fa7806;
+}
+
+.addslider_section .addslider_container .btn_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 10px;
+}
+
+.addslider_section .addslider_container .btn_container .btn {
+  padding: 8px 8px;
+  border: none;
+  cursor: pointer;
+  -webkit-box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+          box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  font-weight: 500;
+  background-color: #fa7806;
+  color: white;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 18px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+/*# sourceMappingURL=addslider.css.map */

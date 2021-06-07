@@ -1,0 +1,80 @@
+
+
+
+.achieve_section{
+          $primary_color:#fa7806;
+          $secondar_color:#D0AA61;
+          background-color:$secondar_color;
+          padding: 30px 0;
+          .title{
+          text-align: center;
+          color:white;
+          // color: $secondar_color;
+          padding: 10px;
+          font-size: 40px;
+          text-transform: uppercase;
+          
+}
+.achievement_1,.achievement_2,.achievement_3,.achievement_4{
+          display: flex;
+          width: 95%;
+          margin: 10px auto;
+          .img_container{
+                    flex: 1;
+                    width: 50%;
+                    height: auto;
+                    // object-fit: contain;
+                    img{
+                              height: 100%;
+                              width: 100%;
+                              padding: 10px;
+                              object-fit: contain;
+                    }
+          }
+          .content_container{
+                    flex: 1;
+                    margin:4% 20px;
+                    h1{
+                          text-transform: capitalize;  
+                            display: flex;
+                            justify-content: center;
+                          color: $primary_color;
+                          margin: 20px auto;
+                          letter-spacing: 4px;
+                    }
+                    p{
+                             letter-spacing: 1px;
+                             width: 80%;
+                             display: flex;
+                            margin: auto;
+                              color:white;
+                    }
+                    .counter_container{
+                              display:flex;
+                              margin-top: 8%;
+                              justify-content: space-around;
+                              align-items: center;
+                              place-items: center;
+                              h3{
+                                        font-size: 40px;
+                                        display: flex;
+                                        justify-content: center;
+                                        
+                                        color: $primary_color;
+                                        font-weight: 800;
+                                       
+                              }
+                              p{
+                                       
+                              display: flex;
+                              justify-content: center;
+                              font-size: 25px;
+                              letter-spacing: 2px;
+                              text-transform: uppercase;
+                              font-weight: bold;
+                               
+                     }
+                    }
+          }
+}
+}

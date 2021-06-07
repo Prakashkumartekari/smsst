@@ -1,0 +1,112 @@
+
+ 
+
+.admin_container{
+          width: 80%;
+          margin: 20px auto;
+         
+          form{
+                    display: flex;
+                    flex-direction: column;
+                    width: 60%;
+                    margin: auto auto;
+                    background-color: white;
+                    box-shadow: 3px 3px 4px rgba(0,0,0,0.3),
+                              -2px -2px 2px rgba(0,0,0,0.3);
+                    padding: 20px 20px 10px 20px;
+                    border-radius: 10px;
+                    -webkit-border-radius: 10px;
+                    -moz-border-radius: 10px;
+                    -ms-border-radius: 10px;
+                    -o-border-radius: 10px;
+                    h1{
+                            text-align: center;
+                            text-transform: uppercase;
+                            letter-spacing: 2px;
+                            color: #fa7806;
+                    }
+                    label{
+                              font-size: 19px;
+                              letter-spacing: 1.5px;
+                              margin:8px 0 0 5px;
+                              font-weight: 500;
+                    }
+                    input{
+                              transition: all 0.5s;
+                            
+                              font-size: 18px;
+                              padding: 5px;
+                              border: none;
+                              border-bottom: 2px solid #fa78068e;
+                              -webkit-transition: all 0.5s;
+                              -moz-transition: all 0.5s;
+                              -ms-transition: all 0.5s;
+                              -o-transition: all 0.5s;
+                              &:focus                           
+{
+                                        outline: none;
+                                        border-bottom: 2px solid #fa7806;
+                              }
+                    }
+                    .age_gender{
+                              display: flex;
+                              // justify-content: center;
+                              align-items: center;
+                              .age{
+                                        input{
+                                                  width: 50%;
+                                                  margin:10px  5px;
+                                        }
+
+                              }
+                              .gender{
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        input{
+                                                  font-size: 25px;
+                                        }
+                                        label{
+                                                  margin:0 5px;
+                                        }
+                                        
+                                      
+                              }
+                    }
+                    .address_container{
+                              display: flex;
+                              flex-direction: column;
+                              // margin: 10px 0;
+                              h1{
+                                        margin: 10px auto;
+                                        color: #fa7806;
+                                        text-transform: uppercase;
+                                        letter-spacing: 3px;
+                              }
+                    }
+                    .btn_container{
+                              display: flex;
+                              justify-content: flex-end;
+                              align-items: center;
+                              padding: 10px 10px;
+                    
+                    .btn{
+                             padding: 8px 8px;
+                             border: none;
+                             cursor: pointer;
+                             box-shadow: 3px 3px 5px rgba(0,0,0,0.3);
+                             border-radius: 5px;
+                             font-weight: 500;
+                             background-color: #fa7806;
+                             color: white;
+                             letter-spacing: 1px ;
+                             text-transform: uppercase;
+                             font-size: 18px ;
+                             -webkit-border-radius: 5px;
+                             -moz-border-radius: 5px;
+                             -ms-border-radius: 5px;
+                             -o-border-radius: 5px;
+}
+          }
+}
+}

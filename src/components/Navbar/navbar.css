@@ -1,0 +1,90 @@
+.active {
+  border: 2px solid #fa7806;
+  border-radius: 7px;
+  background-color: #fff;
+  -webkit-box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.6);
+          box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.6);
+}
+
+.navContainer {
+  margin-top: 10px;
+  background-color: white;
+  -webkit-box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.6);
+          box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.6);
+  padding: 5px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.navContainer .left_side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navContainer .left_side .brandName {
+  margin-left: 20px;
+  font-size: 40px;
+}
+
+.navContainer .left_side .brandName h3 {
+  color: #fa7806;
+}
+
+.navContainer .left_side .logo_container {
+  height: 100px;
+  width: 100px;
+}
+
+.navContainer .left_side .logo_container img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.navContainer .navItem ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.navContainer .navItem ul .textLink1 {
+  padding: 0 10px !important;
+}
+
+.navContainer .navItem ul .textLink, .navContainer .navItem ul .textLink1 {
+  cursor: pointer;
+  padding: 10px 10px;
+  text-decoration: none;
+  font-size: 1.2em;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #fa7806;
+  font-weight: 600;
+}
+
+.navContainer .navItem ul .textLink:hover, .navContainer .navItem ul .textLink1:hover {
+  border: 2px solid #fa7806;
+  border-radius: 7px;
+  background-color: #fff;
+  -webkit-box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.6);
+          box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.6);
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+}
+/*# sourceMappingURL=navbar.css.map */

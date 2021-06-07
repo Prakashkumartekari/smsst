@@ -1,0 +1,37 @@
+.donation_container{
+          $primary_color:#fa7806;
+          $secondar_color:#D0AA61;
+          background-color:  $primary_color;
+          width: 100%;
+          padding: 50px;
+          display: flex;
+          justify-content: center;
+          .content{
+                p{
+                          color:white;
+                        //   text-align: center;
+                          letter-spacing: 1px;
+                          font-weight: 500;
+                }    
+                .donate_link{
+                          background-color:white;
+                          padding: 20px;
+                          display: flex;
+                          align-items: center;
+                          justify-content: center;
+                          margin: 15px auto;
+                          text-decoration: none;
+                          color: #fa7806;
+                          font-size: 30px;
+                          font-weight: bold;
+                          letter-spacing: 2px;
+                          text-transform: uppercase;
+                          box-shadow:4px 4px 20px rgba(0,0,0,0.8);
+                          border-radius:10px ;
+                          -webkit-border-radius:10px ;
+                          -moz-border-radius:10px ;
+                          -ms-border-radius:10px ;
+                          -o-border-radius:10px ;
+}
+          }
+}
