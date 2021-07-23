@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { NavLink } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { showModal } from "../../features/modal/Clickevent";
@@ -7,7 +7,7 @@ import {logout} from "../../features/serverReducer/authreducer";
 import{FaHome,} from 'react-icons/fa'
 import{IoIosLogIn} from 'react-icons/io'
 import{IoLogOutOutline} from 'react-icons/io5'
-import{HiOutlineUserGroup,HiUserAdd} from 'react-icons/hi'
+import{HiOutlineUserGroup} from 'react-icons/hi'
 import{MdContactPhone} from 'react-icons/md'
 import{GiNewspaper} from 'react-icons/gi'
 import{FcBusinessman} from 'react-icons/fc'

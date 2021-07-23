@@ -1,9 +1,9 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import {Navbar,Home,Contact,AllMembers, 
   Modal, DonationDetail,Footer,Allnews,Dashboard, Navbottom,NewsDetail
 } from "./components/index"
 
-import {BrowserRouter, Route, Switch, useRouteMatch} from 'react-router-dom'
+import {BrowserRouter, Route, Switch, } from 'react-router-dom'
 import {updateToken} from "./features/serverReducer/authreducer"
 
 
@@ -14,7 +14,7 @@ import './App.css';
 
 import "./responsive.css"
 import { useDispatch, useSelector, } from 'react-redux';
-import { auth, db } from './firebase/config';
+import { auth} from './firebase/config';
 import { closeModal } from './features/modal/Clickevent';
 
 

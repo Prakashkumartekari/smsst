@@ -15,9 +15,6 @@ import "swiper/components/navigation/navigation.scss";
 import "swiper/components/pagination/pagination.scss";
 import "swiper/components/scrollbar/scrollbar.scss";
 import "./member.css";
-import image1 from "../../assets/images/1.jpeg"
-import image2 from "../../assets/images/2.jpeg"
-import image3 from "../../assets/images/3.jpeg"
 import image from "../../assets/images/prakash.jpeg"
 
 
