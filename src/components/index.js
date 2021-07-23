@@ -14,8 +14,11 @@ import Footer from './Footer/Footer'
 import Allnews from './News/Allnews'
 import Dashboard from "./Dashboard/Dashboard"
 import Navbottom from "./Navbar/Navbottom"
+import NewsDetail from "./News/NewsDetail"
 
-export {Navbar,Home,Contact,AllMembers,Member,News,Modal,Carousel,Achievements,Donation,DonationDetail,Testimonials,Footer,Allnews,Dashboard,Navbottom}
+export {Navbar,Home,Contact,AllMembers,Member,News,Modal,Carousel,
+          Achievements,Donation,DonationDetail,Testimonials,Footer,
+          Allnews,Dashboard,Navbottom,NewsDetail}
 
 
 

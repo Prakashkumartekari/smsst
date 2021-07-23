@@ -19,7 +19,9 @@
 
 .testi_section .testi_container .mySwiper {
   margin: 40px 0;
-  padding: 40px 0;
+  padding: 0 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .testi_section .testi_container .mySwiper .myslide {

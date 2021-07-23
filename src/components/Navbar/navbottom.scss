@@ -9,6 +9,7 @@ $secondar_color:#77bb4d;
         
           .navBottomItem ul{
                     display: flex;
+                //     flex-direction: column;
                     list-style-type: none;
                     text-decoration: none;
                     padding: 8px 0;
@@ -22,9 +23,9 @@ $secondar_color:#77bb4d;
                               align-items: center;
                               cursor: pointer;
                               text-decoration: none;
-                              font-size: 16px;
-                              padding: 0 10px;
-                              letter-spacing: .4px;
+                              font-size: 12px;
+                              padding: 0 7px;
+                              letter-spacing: .2px;
                               text-transform: uppercase;
                               color:#fa780694;
                              font-weight: 500;

@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { showModal } from "../../features/modal/Clickevent";
+import {logout} from "../../features/serverReducer/authreducer";
 
 import{FaHome,} from 'react-icons/fa'
 import{IoIosLogIn} from 'react-icons/io'
@@ -15,9 +16,9 @@ import "./navbottom.css";
 // import $ from 'jquery'
 
 function Navbottom() {
-  const [auth, setAuth] = useState(false);
-  const [isadmin, setIsadmin] = useState(true);
+  
   const dispatch = useDispatch();
+  const token = useSelector((state)=>state.authReducer.token)
 
   return (
     <>
@@ -66,7 +67,7 @@ function Navbottom() {
                <span><HiOutlineUserGroup/></span> Member
               </NavLink>
             </li>
-            {isadmin ? (
+            {token !=null &&
               <li>
                 <NavLink
                   exact
@@ -77,17 +78,15 @@ function Navbottom() {
                 <span><FcBusinessman/></span>  Admin
                 </NavLink>
               </li>
-            ) : (
-              <li className="textLink1" onClick={() => dispatch(showModal())}>
-               <span><HiUserAdd/></span> Register
-              </li>
-            )}
-            {auth? (
-              <li className="textLink1" onClick={() => dispatch(showModal())}>
+}
+             
+          
+            {token === null? (
+              <li className="textLink1" onClick={() => dispatch(showModal("login"))}>
                <span><IoIosLogIn/></span> LogIn
               </li>
             ) : (
-              <li className="textLink1"><span><IoLogOutOutline/></span>LogOut
+              <li className="textLink1" onClick={()=>dispatch(logout())}><span><IoLogOutOutline/></span>LogOut
               </li>
             )}
 

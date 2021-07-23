@@ -1,6 +1,7 @@
 import React from "react";
 // import image from "../../assets/images/prakash.jpeg";
 import "./allnews.css";
+import {Link} from 'react-router-dom'
 const news = [
   {
     id: 1,
@@ -67,6 +68,7 @@ const news = [
   },
 ];
 function Allnews() {
+ 
   return (
     <>
       <div className="news_wrapper ">
@@ -77,11 +79,15 @@ function Allnews() {
                 <img src={single_news.url} alt="memimage" />
               </div>
               <div className="content">
-                <div className="news_name">
                   <h3>{single_news.news}</h3>
-                  <p>{single_news.date}</p>
-                  <p>{single_news.newsDescription}</p>
-                </div>
+                  <div className="byOrdate">
+                   <p><span id="by">&mdash;by</span><span id="writer">Prakash Kumar</span></p>
+                  <p className="time">{single_news.date}</p>
+                  </div>
+                  <div className="main_news">
+                  <p>{single_news.newsDescription}<span ><Link exact to={`/newsdetail/${single_news.id}`} className="morenews">See More....</Link></span></p>
+                  </div>
+             
               </div>
             </div>
           ))}

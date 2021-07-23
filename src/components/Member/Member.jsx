@@ -15,67 +15,29 @@ import "swiper/components/navigation/navigation.scss";
 import "swiper/components/pagination/pagination.scss";
 import "swiper/components/scrollbar/scrollbar.scss";
 import "./member.css";
+import image1 from "../../assets/images/1.jpeg"
+import image2 from "../../assets/images/2.jpeg"
+import image3 from "../../assets/images/3.jpeg"
+import image from "../../assets/images/prakash.jpeg"
 
+
+const members = [
+  { id: 1, name: "prakash", image, post: "member", home: "jagadhri" },
+  { id: 2, name: "prakash", image, post: "member", home: "jagadhri" },
+  { id: 3, name: "prakash", image, post: "member", home: "jagadhri" },
+  { id: 4, name: "prakash", image, post: "member", home: "jagadhri" },
+  { id: 5, name: "prakash", image, post: "member", home: "jagadhri" },
+  { id: 6, name: "prakash", image, post: "member", home: "jagadhri" },
+  { id: 7, name: "prakash", image, post: "member", home: "jagadhri" },
+  { id: 8, name: "prakash", image, post: "member", home: "jagadhri" },
+];
 // install Swiper modules
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y, Autoplay]);
-const images = [
-  {
-    id: 1,
-    url: "http://www.smsstjagadhri.in/images/1.jpeg",
-    alt: "imgage1",
-    news: "First News",
-    newsDescription: "hlo this is news from Prkash kumar hlo this is news from Prkash kumar hlo this is news from Prkash kumar hlo this is news from Prkash kumar",
-    date:"21/04/2021"
-  },
-  {
-    id: 2,
-    url: "http://www.smsstjagadhri.in/images/2.jpeg",
-    alt: "imgage2",
-    news: "Second News",
-    newsDescription: "hlo this is news from Prkash kumar hlo this is news from Prkash kumar hlo this is news from Prkash kumar hlo this is news from Prkash kumar",
-    date:"21/04/2021"
-  },
-  {
-    id: 3,
-    url: "http://www.smsstjagadhri.in/images/3.jpeg",
-    alt: "imgage3",
-    news: "Third News News",
-    newsDescription: "hlo this is news from Prkash kumar hlo this is news from Prkash kumar hlo this is news from Prkash kumar hlo this is news from Prkash kumar",
-    date:"21/04/2021"
-  },{
-    id: 4,
-    url: "http://www.smsstjagadhri.in/images/3.jpeg",
-    alt: "imgage4",
-    news: "Fourth News News",
-    newsDescription: "hlo this is news from Prkash kumar hlo this is news from Prkash kumar hlo this is news from Prkash kumar hlo this is news from Prkash kumar",
-    date:"21/04/2021"
-  },{
-    id: 5,
-    url: "http://www.smsstjagadhri.in/images/3.jpeg",
-    alt: "imgage4",
-    news: "Fourth News News",
-    newsDescription: "hlo this is news from Prkash kumar hlo this is news from Prkash kumar hlo this is news from Prkash kumar hlo this is news from Prkash kumar",
-    date:"21/04/2021"
-  },{
-    id: 6,
-    url: "http://www.smsstjagadhri.in/images/3.jpeg",
-    alt: "imgage4",
-    news: "Fourth News News",
-    newsDescription: "hlo this is news from Prkash kumar hlo this is news from Prkash kumar hlo this is news from Prkash kumar hlo this is news from Prkash kumar",
-    date:"21/04/2021"
-  },{
-    id: 7,
-    url: "http://www.smsstjagadhri.in/images/3.jpeg",
-    alt: "imgage4",
-    news: "Fourth News News",
-    newsDescription: "hlo this is news from Prkash kumar hlo this is news from Prkash kumar hlo this is news from Prkash kumar hlo this is news from Prkash kumar",
-    date:"21/04/2021"
-  },
-];
+
 function Member() {
   return (
     
-    <div className="news__section">
+    <div className="memberSlider__section">
       <h1 className="header">Our Member's</h1>
       <Swiper
       breakpoints={{
@@ -108,28 +70,55 @@ function Member() {
         navigation={true}
         className="mySwiper"
       >
-     {images.map(image=>
-     <SwiperSlide className="myslide" key={image.id}>
-       <div className="img_container" >
-         <img src={image.url} alt="img"   />
-       </div>
-       <div className="content_container">
-     <div className="news_header">
-       <div className="title">
-       <p>{image.news}</p>
-       </div>
-       <div className="time">
-       <p>{image.date}</p>
-       </div>
-    </div>
-    <div className="description">
-      <p>{image.newsDescription}</p>
-    </div>
-       </div>
-     </SwiperSlide>
-     )}
+     {members.map(member=>
+     <SwiperSlide key={member.id}>
+        <div className="memberSlider_card" key={member.id}>
+          <div className="imgcontainerSlider">
+            <img src={member.image} alt="memimage"  className="imgSlider"/>
+          </div>
 
-    
+          <div className="contentSlider">
+            
+              <h3>{member.post}</h3> 
+              <p className="id"><span>Id </span><span id="id">{member.id}</span></p>
+             <hr />
+             <div className="personal_info">
+            
+             <div className="single_line">
+               <p>Name:</p>
+               <p className="name">Prakash Kumar</p>
+             </div> <div className="single_line">
+               <p>Parent's:</p>
+               <p>Ramesh Rawat</p>
+             </div>
+              <div className="single_line">
+               <p>D.O.B:</p>
+               <p>16-01-1997</p>
+             </div> 
+             <hr style={{marginTop:"5px"}}/>
+             <div className="address_info">
+              
+             <div className="single_line">
+               <p>Village/City:</p>
+               <p>Jagadhri</p>
+             </div>
+              <div className="single_line">
+               <p>Dist:</p>
+               <p>Yamuna Nagar</p>
+             </div> <div className="single_line">
+               <p>State:</p>
+               <p>Haryana</p>
+             </div>
+
+          
+             </div>
+            
+            </div>
+          </div>
+        </div>
+  
+     </SwiperSlide>
+     )}   
       </Swiper>
     
     </div>

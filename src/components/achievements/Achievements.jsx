@@ -1,7 +1,12 @@
 import React from "react";
 import "./achievements.css";
+import image5 from '../../assets/images/5.jpeg'
+import {Waypoint} from "react-waypoint"
+import CountUp  from "react-countup"
 
 function Achievements() {
+ 
+    const changed = (start)=>start()
   return (
     <>
       <div className="achieve_section">
@@ -10,7 +15,7 @@ function Achievements() {
           <div className="achievement_1">
             <div className="img_container">
               <img
-                src="http://www.smsstjagadhri.in/images/5.jpeg"
+                src={image5}
                 alt="achievement_1"
               />
             </div>
@@ -23,13 +28,28 @@ function Achievements() {
               </p>
               <div className="counter_container">
                 <div className="first_counter">
-                  <h3 className="counter">7</h3>
+                <CountUp start={0} end={7} delay={.5} duration={5} suffix={"+"}>
+                {({ countUpRef, start }) => (
+                  <>
+                <Waypoint onEnter={()=>changed(start)} />
+                  <h3 className="counter" ref={countUpRef}>0</h3>
+                  </>
+                )}
+                  </CountUp>
                   <p>States</p>
                 </div>
                 <div className="second_counter">
-                  <h3 className="counter">400</h3>
+                  <CountUp start={0} end={500} delay={.5} duration={5} suffix={"+"}>
+                {({ countUpRef, start }) => (
+                  <>
+                <Waypoint onEnter={()=>changed(start)} />
+                  <h3 className="counter" ref={countUpRef}>0</h3>
+                  </>
+                )}
+                  </CountUp>
                   <p >Total</p>
                 </div>
+                
               </div>
             </div>
           </div>
@@ -44,18 +64,32 @@ function Achievements() {
               </p>
               <div className="counter_container">
                 <div className="first_counter">
-                  <h3 className="counter">7</h3>
-                  <p>States</p>
+                <CountUp start={0} end={50} delay={.5} duration={5} suffix={"+"}>
+                {({ countUpRef, start }) => (
+                  <>
+                <Waypoint onEnter={()=>changed(start)} />
+                  <h3 className="counter" ref={countUpRef}>0</h3>
+                  </>
+                )}
+                  </CountUp>
+                  <p>Place</p>
                 </div>
                 <div className="second_counter">
-                  <h3 className="counter">400</h3>
+                <CountUp start={0} end={5000} delay={.5} duration={5} suffix={"+"}>
+                {({ countUpRef, start }) => (
+                  <>
+                <Waypoint onEnter={()=>changed(start)} />
+                  <h3 className="counter" ref={countUpRef}>0</h3>
+                  </>
+                )}
+                  </CountUp>
                   <p >Total</p>
                 </div>
               </div>
             </div>
             <div className="img_container">
               <img
-                src="http://www.smsstjagadhri.in/images/5.jpeg"
+                src={image5}
                 alt="achievement_1"
               />
             </div>
@@ -63,7 +97,7 @@ function Achievements() {
           <div className="achievement_3">
             <div className="img_container">
               <img
-                src="http://www.smsstjagadhri.in/images/5.jpeg"
+                src={image5}
                 alt="achievement_1"
               />
             </div>
@@ -76,11 +110,25 @@ function Achievements() {
               </p>
               <div className="counter_container">
                 <div className="first_counter">
-                  <h3 className="counter">7</h3>
-                  <p>States</p>
+                <CountUp start={0} end={100} delay={.5} duration={5} suffix={"+"}>
+                {({ countUpRef, start }) => (
+                  <>
+                <Waypoint onEnter={()=>changed(start)} />
+                  <h3 className="counter" ref={countUpRef}>0</h3>
+                  </>
+                )}
+                  </CountUp>
+                  <p>Place</p>
                 </div>
                 <div className="second_counter">
-                  <h3 className="counter">400</h3>
+                <CountUp start={0} end={100000} delay={.5} duration={5} suffix={"+"}>
+                {({ countUpRef, start }) => (
+                  <>
+                <Waypoint onEnter={()=>changed(start)} />
+                  <h3 className="counter" ref={countUpRef}>0</h3>
+                  </>
+                )}
+                  </CountUp>
                   <p >Total</p>
                 </div>
               </div>
@@ -97,18 +145,32 @@ function Achievements() {
               </p>
               <div className="counter_container">
                 <div className="first_counter">
-                  <h3 className="counter">7</h3>
-                  <p>States</p>
+                <CountUp start={0} end={100} delay={.5} duration={5} suffix={"+"}>
+                {({ countUpRef, start }) => (
+                  <>
+                <Waypoint onEnter={()=>changed(start)} />
+                  <h3 className="counter" ref={countUpRef}>0</h3>
+                  </>
+                )}
+                  </CountUp>
+                  <p>Places</p>
                 </div>
                 <div className="second_counter">
-                  <h3 className="counter">400</h3>
+                <CountUp start={0} end={200} delay={.5} duration={5} suffix={"+"}>
+                {({ countUpRef, start }) => (
+                  <>
+                <Waypoint onEnter={()=>changed(start)} />
+                  <h3 className="counter" ref={countUpRef}>0</h3>
+                  </>
+                )}
+                  </CountUp>
                   <p >Total</p>
                 </div>
               </div>
             </div>
              <div className="img_container">
               <img
-                src="http://www.smsstjagadhri.in/images/5.jpeg"
+                src={image5}
                 alt="achievement_1"
               />
             </div>

@@ -1,15 +1,23 @@
-import React, { useState } from "react";
+import React from "react";
 import "./navbar.css";
 import { NavLink } from "react-router-dom";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { showModal } from "../../features/modal/Clickevent";
+import {logout} from "../../features/serverReducer/authreducer";
 import image1 from "../../assets/images/logo4.png";
 // import $ from 'jquery'
 
 function Navbar() {
-  const [auth, setAuth] = useState(false);
-  const [isadmin, setIsadmin] = useState(true);
+ 
   const dispatch = useDispatch();
+
+// const localToken = localStorage.getItem("token")
+// const token=false
+  const token = useSelector((state)=>state.authReducer.token)
+
+  // const localtoken = localStorage.getItem()
+
+// const localtoken = localhost.getItem(token)
 
   return (
     <>
@@ -64,7 +72,7 @@ function Navbar() {
                 Member
               </NavLink>
             </li>
-            {isadmin ? (
+            {token !=null && 
               <li>
                 <NavLink
                   exact
@@ -74,18 +82,14 @@ function Navbar() {
                 >
                   Admin
                 </NavLink>
-              </li>
-            ) : (
-              <li className="textLink1" onClick={() => dispatch(showModal())}>
-                Register
-              </li>
-            )}
-            {auth? (
-              <li className="textLink1" onClick={() => dispatch(showModal())}>
+              </li>          
+            }
+            {token === null? (
+              <li className="textLink1" onClick={() => dispatch(showModal("login"))}>
                 LogIn
               </li>
             ) : (
-              <li className="textLink1">LogOut</li>
+              <li className="textLink1" onClick={()=>dispatch(logout())}>LogOut</li>
             )}
 
             {/* <li className="textLink" onClick={()=>dispatch(showModal())} > Register</li>

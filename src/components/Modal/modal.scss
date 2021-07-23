@@ -1,3 +1,20 @@
+.loader {
+    margin: 5px auto;
+     align-items: center;
+     border: 16px solid #f3f3f3;
+     border-radius: 50%;
+     border-top: 16px solid #3498db;
+     width:100px;
+     height:100px;
+     -webkit-animation: spin 1s linear infinite; /* Safari */
+     animation: spin 2s linear infinite;
+
+   }
+   
+   @keyframes spin {
+     0% { transform: rotate(0deg); }
+     100% { transform: rotate(360deg); }
+   }
 .modalContainer{
           position: fixed;
           top: 0;
@@ -9,6 +26,7 @@
           justify-content: center;
           align-items: center;
           z-index: 10000000;
+
           .modalContent{
                     background-color: white;
                     width: 50%;
@@ -39,12 +57,18 @@
                     }
                     .modalForm{
                               display: flex;
+                              justify-content: center;
                               flex-direction: column;
                              width: 90%;
                              margin: auto;
                               // justify-content: center;
                               // align-items: center;
                               padding: 20px;
+                              .invalid{
+                                   color: red;
+                                   font-size: 20px;
+                                   margin: 5px auto;
+                              }
                               label{
                                         font-size: 1.4em;
                                         margin:7px 0;
@@ -72,6 +96,7 @@
                                    outline: none;
                                    border: none;
                                    cursor: pointer;
+                                   text-transform: capitalize;
                                    letter-spacing: 1px;
 
                                    border-radius:5px ;

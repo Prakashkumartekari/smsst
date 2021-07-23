@@ -57,15 +57,28 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   list-style-type: none;
   text-decoration: none;
 }
 
 .navContainer .navItem ul .textLink1 {
-  padding: 0 10px !important;
+  padding: 10px 15px !important;
+  border-radius: 10px;
+  margin-left: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: #fff;
+  background-color: #fa7806;
 }
 
-.navContainer .navItem ul .textLink, .navContainer .navItem ul .textLink1 {
+.navContainer .navItem ul .textLink {
   cursor: pointer;
   padding: 10px 10px;
   text-decoration: none;
@@ -76,7 +89,7 @@
   font-weight: 600;
 }
 
-.navContainer .navItem ul .textLink:hover, .navContainer .navItem ul .textLink1:hover {
+.navContainer .navItem ul .textLink:hover {
   border: 2px solid #fa7806;
   border-radius: 7px;
   background-color: #fff;

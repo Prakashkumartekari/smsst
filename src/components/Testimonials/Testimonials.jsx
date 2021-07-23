@@ -83,12 +83,12 @@ function Testimonials() {
          
         },
         "800": {
-          "slidesPerView": 3,
+          "slidesPerView": 2,
           "spaceBetween": 30
         },
         "1000": {
-          "slidesPerView": 4,
-          "spaceBetween": 40
+          "slidesPerView": 2,
+          "spaceBetween": 30
         }
       }}
         // centeredSlides={true}

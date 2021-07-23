@@ -15,13 +15,17 @@ import "swiper/components/navigation/navigation.scss";
 import "swiper/components/pagination/pagination.scss";
 import "swiper/components/scrollbar/scrollbar.scss";
 import "./news.css";
+import image1 from "../../assets/images/1.jpeg"
+import image2 from "../../assets/images/2.jpeg"
+import image3 from "../../assets/images/3.jpeg"
+
 
 // install Swiper modules
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y, Autoplay]);
 const images = [
   {
     id: 1,
-    url: "http://www.smsstjagadhri.in/images/1.jpeg",
+    url: image3,
     alt: "imgage1",
     news: "First News",
     newsDescription: "hlo this is news from Prkash kumar hlo this is news from Prkash kumar hlo this is news from Prkash kumar hlo this is news from Prkash kumar",
@@ -29,7 +33,7 @@ const images = [
   },
   {
     id: 2,
-    url: "http://www.smsstjagadhri.in/images/2.jpeg",
+    url: image1,
     alt: "imgage2",
     news: "Second News",
     newsDescription: "hlo this is news from Prkash kumar hlo this is news from Prkash kumar hlo this is news from Prkash kumar hlo this is news from Prkash kumar",
@@ -37,35 +41,35 @@ const images = [
   },
   {
     id: 3,
-    url: "http://www.smsstjagadhri.in/images/3.jpeg",
+    url: image2,
     alt: "imgage3",
     news: "Third News News",
     newsDescription: "hlo this is news from Prkash kumar hlo this is news from Prkash kumar hlo this is news from Prkash kumar hlo this is news from Prkash kumar",
     date:"21/04/2021"
   },{
     id: 4,
-    url: "http://www.smsstjagadhri.in/images/3.jpeg",
+    url: image3,
     alt: "imgage4",
     news: "Fourth News News",
     newsDescription: "hlo this is news from Prkash kumar hlo this is news from Prkash kumar hlo this is news from Prkash kumar hlo this is news from Prkash kumar",
     date:"21/04/2021"
   },{
     id: 5,
-    url: "http://www.smsstjagadhri.in/images/3.jpeg",
+    url: image1,
     alt: "imgage4",
     news: "Fourth News News",
     newsDescription: "hlo this is news from Prkash kumar hlo this is news from Prkash kumar hlo this is news from Prkash kumar hlo this is news from Prkash kumar",
     date:"21/04/2021"
   },{
     id: 6,
-    url: "http://www.smsstjagadhri.in/images/3.jpeg",
+    url: image2,
     alt: "imgage4",
     news: "Fourth News News",
     newsDescription: "hlo this is news from Prkash kumar hlo this is news from Prkash kumar hlo this is news from Prkash kumar hlo this is news from Prkash kumar",
     date:"21/04/2021"
   },{
     id: 7,
-    url: "http://www.smsstjagadhri.in/images/3.jpeg",
+    url: image3,
     alt: "imgage4",
     news: "Fourth News News",
     newsDescription: "hlo this is news from Prkash kumar hlo this is news from Prkash kumar hlo this is news from Prkash kumar hlo this is news from Prkash kumar",
