@@ -6,8 +6,16 @@ $themeColor:black !important;
        
 
 .memberSlider__section{
-       margin-bottom: 20px;
+        width: 95%;
+        margin: 20px auto;
+        overflow: hidden;
+
+       .swiper-container{
+               box-shadow: none;
+             padding-bottom:40px;
+       }
         .swiper-container .swiper-slide img{
+
              max-width: none;
              max-height: none;
              position: static;
@@ -29,11 +37,11 @@ $themeColor:black !important;
           }
            .memberSlider_card{
           background-color: white;
-          box-shadow: 4px 4px 10px rgba(0,0,0,0.4);
+          box-shadow: 3px 1px 5px rgba(0,0,0,0.4);
         //   margin: 15px 10px;
-          width: 300px;
+          width: auto;
           height: 100%;
-          padding: 20px 10px;
+          padding: 10px;
         //   background-color: red;
         .imgcontainerSlider{
                 display: flex;
@@ -129,4 +137,20 @@ $themeColor:black !important;
 
           }
 
+}
+@media only screen and (max-width: 767.98px){
+        .memberSlider__section{
+                width: 90%;
+                .swiper-slide{
+                  display: flex;
+                  justify-content: center;
+                }
+                
+                .memberSlider_card{
+                  width: 95%;
+              }
+              .header{
+                font-size: 30px;
+              }
+              }
 }

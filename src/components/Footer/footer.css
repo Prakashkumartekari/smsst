@@ -90,7 +90,7 @@
   display: flex;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
-          justify-content: end;
+          justify-content: flex-end;
   color: white;
   opacity: 0.5;
 }
@@ -103,5 +103,143 @@
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 1px;
+}
+
+@media only screen and (max-width: 767.98px) {
+  .footer_section {
+    background-color: #333333;
+    padding: 50px 20px 20px 20px;
+  }
+  .footer_section .footer_container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer_section .footer_container .navItem ul {
+    list-style-type: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 20px auto;
+  }
+  .footer_section .footer_container .navItem ul li {
+    margin: 15px 0;
+  }
+  .footer_section .footer_container .navItem ul .textLink {
+    text-decoration: none;
+    font-size: 18px;
+    letter-spacing: 0.5 px;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 6px 10px;
+    font-weight: 500;
+    color: #fa7806;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  .footer_section .footer_container .social_container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 30px 0;
+  }
+  .footer_section .footer_container .social_container .title {
+    font-size: 25px;
+    letter-spacing: 2px;
+    color: #fa7806;
+  }
+  .footer_section .footer_container .social_container .icon_container {
+    margin-top: 20px;
+  }
+  .footer_section .footer_container .social_container .icon_container .icon_style {
+    font-size: 30px;
+    color: white;
+    margin: 0 20px;
+    cursor: pointer;
+  }
+  .footer_section .footer_container .map_container iframe {
+    width: 90vw;
+    height: 40vh;
+  }
+  .footer_section .copyright_container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 90px;
+  }
+  .footer_section .copyright_container .copyright {
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+  .footer_section .copyright_container .designed {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    color: white;
+    opacity: 0.5;
+  }
+  .footer_section .copyright_container .designed h3 {
+    font-weight: normal;
+  }
+  .footer_section .copyright_container .designed h3 span {
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .footer_section .footer_container .navItem ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer_section .footer_container .navItem ul li {
+    margin: 10px 0;
+  }
 }
 /*# sourceMappingURL=footer.css.map */

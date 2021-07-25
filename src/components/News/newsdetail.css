@@ -59,4 +59,19 @@
   opacity: 0.7;
   text-align: center;
 }
+
+@media only screen and (max-width: 767.98px) {
+  .newsdetail_container {
+    width: 95%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  .newsdetail_container .imgWrapper {
+    height: 300px;
+  }
+  .newsdetail_container .imgWrapper img {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+}
 /*# sourceMappingURL=newsdetail.css.map */

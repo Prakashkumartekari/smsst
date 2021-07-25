@@ -102,4 +102,74 @@
   text-transform: uppercase;
   font-weight: bold;
 }
+
+@media only screen and (max-width: 767.98px) {
+  .achieve_section .achievement_1,
+  .achieve_section .achievement_2,
+  .achieve_section .achievement_3,
+  .achieve_section .achievement_4 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .achieve_section .achievement_1 .img_container,
+  .achieve_section .achievement_2 .img_container,
+  .achieve_section .achievement_3 .img_container,
+  .achieve_section .achievement_4 .img_container {
+    width: 98%;
+    margin: auto;
+  }
+  .achieve_section .achievement_1 .img_container img,
+  .achieve_section .achievement_2 .img_container img,
+  .achieve_section .achievement_3 .img_container img,
+  .achieve_section .achievement_4 .img_container img {
+    padding: 5px;
+  }
+  .achieve_section .achievement_1 .content_container,
+  .achieve_section .achievement_2 .content_container,
+  .achieve_section .achievement_3 .content_container,
+  .achieve_section .achievement_4 .content_container {
+    margin: 0 10px;
+  }
+  .achieve_section .achievement_1 .content_container h1,
+  .achieve_section .achievement_2 .content_container h1,
+  .achieve_section .achievement_3 .content_container h1,
+  .achieve_section .achievement_4 .content_container h1 {
+    margin: 10px auto;
+    letter-spacing: 1px;
+    font-size: 30px;
+  }
+  .achieve_section .achievement_1 .content_container p,
+  .achieve_section .achievement_2 .content_container p,
+  .achieve_section .achievement_3 .content_container p,
+  .achieve_section .achievement_4 .content_container p {
+    width: 90%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  .achieve_section .achievement_2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .achieve_section .achievement_4 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
 /*# sourceMappingURL=achievements.css.map */

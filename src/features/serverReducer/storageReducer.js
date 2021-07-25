@@ -1,11 +1,12 @@
 import {createAsyncThunk, createSlice} from '@reduxjs/toolkit'
 import { db } from '../../firebase/config';
-
+const dt = new Date()
 export const addmember = createAsyncThunk(
           "storage/addmember",
-          async (formdata)=>{
-                    
-                   await db.collection('members').doc('1giKOUOEMFyxm1MTMOO6').collection(`${formdata.memberid}`).add({
+          async ({formdata,url})=>{
+                    const imageurl = await url
+                   await db.collection('members').add({
+                              addedDate:`${dt.getDate()}-${dt.getMonth()}-${dt.getFullYear()} ${dt.getHours()}:${dt.getMinutes()}`,
                               memberid:formdata.memberid,
                               name:formdata.name,
                               parents:formdata.parents,
@@ -15,7 +16,9 @@ export const addmember = createAsyncThunk(
                               village:formdata.village,
                               district:formdata.district,
                               pincode:formdata.pincode,
-                              state:formdata.state
+                              state:formdata.state,
+                             imageurl
+
 
                    }).catch(err=>{
                              console.log(err)

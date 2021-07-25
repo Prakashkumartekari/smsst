@@ -87,4 +87,13 @@
   -o-object-fit: cover;
      object-fit: cover;
 }
+
+@media only screen and (max-width: 767.98px) {
+  .news_wrapper {
+    width: 98%;
+  }
+  .news_card {
+    width: 320px;
+  }
+}
 /*# sourceMappingURL=allnews.css.map */

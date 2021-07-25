@@ -1,5 +1,13 @@
 .memberSlider__section {
-  margin-bottom: 20px;
+  width: 95%;
+  margin: 20px auto;
+  overflow: hidden;
+}
+
+.memberSlider__section .swiper-container {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  padding-bottom: 40px;
 }
 
 .memberSlider__section .swiper-container .swiper-slide img {
@@ -26,11 +34,11 @@
 
 .memberSlider__section .memberSlider_card {
   background-color: white;
-  -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
-          box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
-  width: 300px;
+  -webkit-box-shadow: 3px 1px 5px rgba(0, 0, 0, 0.4);
+          box-shadow: 3px 1px 5px rgba(0, 0, 0, 0.4);
+  width: auto;
   height: 100%;
-  padding: 20px 10px;
+  padding: 10px;
 }
 
 .memberSlider__section .memberSlider_card .imgcontainerSlider {
@@ -153,5 +161,25 @@
   letter-spacing: 1px;
   font-size: 20px;
   font-weight: 500;
+}
+
+@media only screen and (max-width: 767.98px) {
+  .memberSlider__section {
+    width: 90%;
+  }
+  .memberSlider__section .swiper-slide {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .memberSlider__section .memberSlider_card {
+    width: 95%;
+  }
+  .memberSlider__section .header {
+    font-size: 30px;
+  }
 }
 /*# sourceMappingURL=member.css.map */

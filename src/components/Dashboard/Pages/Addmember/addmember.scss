@@ -1,131 +1,259 @@
 .loader {
-        margin: 5px auto;
-         align-items: center;
-         border: 7px solid #f3f3f3;
-         border-radius: 50%;
-         border-top: 7px solid #fa7806;
-         width:40px;
-         height:40px;
-         -webkit-animation: spin 1s linear infinite; /* Safari */
-         animation: spin 2s linear infinite;
-    
-       }
-       
-       @keyframes spin {
-         0% { transform: rotate(0deg); }
-         100% { transform: rotate(360deg); }
-       }
- 
+  margin: 5px auto;
+  align-items: center;
+  border: 7px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 7px solid #fa7806;
+  width: 40px;
+  height: 40px;
+  -webkit-animation: spin 1s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
 
-.admin_container{
-          width: 80%;
-          margin: 20px auto;
-         
-          form{
-                    display: flex;
-                    flex-direction: column;
-                    width: 60%;
-                    margin: auto auto;
-                    background-color: white;
-                    box-shadow: 3px 3px 4px rgba(0,0,0,0.3),
-                              -2px -2px 2px rgba(0,0,0,0.3);
-                    padding: 20px 20px 10px 20px;
-                    border-radius: 10px;
-                    -webkit-border-radius: 10px;
-                    -moz-border-radius: 10px;
-                    -ms-border-radius: 10px;
-                    -o-border-radius: 10px;
-                    h1{
-                            text-align: center;
-                            text-transform: uppercase;
-                            letter-spacing: 2px;
-                            color: #fa7806;
-                    }
-                    label{
-                              font-size: 19px;
-                              letter-spacing: 1.5px;
-                              margin:8px 0 0 5px;
-                              font-weight: 500;
-                    }
-                    input{
-                              transition: all 0.5s;
-                            
-                              font-size: 18px;
-                              padding: 5px;
-                              border: none;
-                              border-bottom: 2px solid #fa78068e;
-                              -webkit-transition: all 0.5s;
-                              -moz-transition: all 0.5s;
-                              -ms-transition: all 0.5s;
-                              -o-transition: all 0.5s;
-                              &:focus                           
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.admin_container {
+  width: 80%;
+  margin: 20px auto;
+
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: auto auto;
+    .backBox{
+      display: flex;
+      flex-direction: column;
+      
+    background-color: white;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+   padding: 20px 10px;
+    border-radius: 10px;
+    width: 100%;
+      margin:10px auto ;
+    }
+    h1 {
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: #fa7806;
+    }
+    label {
+      font-size: 19px;
+      letter-spacing: 1.5px;
+      margin: 8px 0 0 5px;
+      font-weight: 500;
+    }
+    input {
+      transition: all 0.5s;
+
+      font-size: 18px;
+      padding: 5px;
+      border: none;
+      border-bottom: 2px solid #fa78068e;
+      -webkit-transition: all 0.5s;
+      -moz-transition: all 0.5s;
+      -ms-transition: all 0.5s;
+      -o-transition: all 0.5s;
+      &:focus {
+        outline: none;
+        border-bottom: 2px solid #fa7806;
+      }
+    }
+    .age_gender {
+      display: flex;
+      // justify-content: center;
+      align-items: center;
+
+      .age {
+        input {
+          width: 50%;
+          margin: 10px 5px;
+        }
+      }
+      .gender {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        input {
+          font-size: 25px;
+        }
+        label {
+          margin: 0 5px;
+        }
+      }
+    }
+    .address_container {
+      display: flex;
+      flex-direction: column;
+      // margin: 10px 0;
+      h1 {
+        margin: 10px auto;
+        color: #fa7806;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+      }
+    }
+    .btn_container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+      padding: 10px 10px;
+
+      .btn {
+        width: 50%;
+        padding: 8px 8px;
+        border: none;
+        cursor: pointer;
+        box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+
+        border-radius: 5px;
+        font-weight: 500;
+        background-color: #fa7806;
+        color: white;
+        letter-spacing: 2px;
+        font-weight: 600;
+        text-transform: uppercase;
+        font-size: 18px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+      }
+    }
+  }
+  .addmember_image_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+   padding: 20px 10px;
+    border-radius: 10px;
+    width: 90%;
+      margin:10px auto ;
+
+    label {
+      font-weight: 500;
+      margin: 0;
+      padding: 10px 15px;
+      
+      color: #fa7806;
+      
+}
+
+    input {
+      font-size: 18px;
+      padding: 7px 10px;
+      display: none;
+    }
+    h4 {
+      letter-spacing: 2px;
+      color: #fa7806b6;
+      margin: 10px auto;
+    }
+    .addmember_image {
+      margin: 5px;
+      .progressbar {
+        height: 5px;
+        background-color: #fa7806;
+        color: #fa7806;
+        margin-bottom: 7px;
+      }
+      h4 {
+        margin-bottom: 10px;
+        text-align: center;
+        font-size: 20px;
+      }
+      .uploadedmember_image_container {
+        height: 200px;
+        width: 100%;
+        margin: auto;
+        margin-bottom: 5px;
+        img {
+          height: 100%;
+          width: 100%;
+          object-fit: contain;
+        }
+      }
+      .member_icon_container{
+      display: flex;
+      justify-content: center;
+      border-radius: 10px;
+      background-color: #292623fb;
+      font-size: 20px;
+      cursor: pointer;
+      label
 {
-                                        outline: none;
-                                        border-bottom: 2px solid #fa7806;
-                              }
-                    }
-                    .age_gender{
-                              display: flex;
-                              // justify-content: center;
-                              align-items: center;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+        }
+        h5 {
+          color: #fa7806;
+          margin-left: 4px;
+          text-transform: capitalize;
+        }
+      }
+    }
+  }
 
-                              .age{
-                                        input{
-                                                  width: 50%;
-                                                  margin:10px  5px;
-                                        }
-
-                              }
-                              .gender{
-                                        display: flex;
-                                        justify-content: center;
-                                        align-items: center;
-
-                                        input{
-                                                  font-size: 25px;
-
-                                        }
-                                        label{
-                                                  margin:0 5px;
-                                        }
-                                        
-                                      
-                              }
-                    }
-                    .address_container{
-                              display: flex;
-                              flex-direction: column;
-                              // margin: 10px 0;
-                              h1{
-                                        margin: 10px auto;
-                                        color: #fa7806;
-                                        text-transform: uppercase;
-                                        letter-spacing: 3px;
-                              }
-                    }
-                    .btn_container{
-                              display: flex;
-                              justify-content: flex-end;
-                              align-items: center;
-                              padding: 10px 10px;
-                    
-                    .btn{
-                             padding: 8px 8px;
-                             border: none;
-                             cursor: pointer;
-                             box-shadow: 3px 3px 5px rgba(0,0,0,0.3);
-                             border-radius: 5px;
-                             font-weight: 500;
-                             background-color: #fa7806;
-                             color: white;
-                             letter-spacing: 1px ;
-                             text-transform: uppercase;
-                             font-size: 18px ;
-                             -webkit-border-radius: 5px;
-                             -moz-border-radius: 5px;
-                             -ms-border-radius: 5px;
-                             -o-border-radius: 5px;
 }
+@media only screen and (max-width: 767.98px) {
+  .admin_container {
+    width: 95%;
+    margin: 20px auto;
+    .news_icon_container{
+      label{
+        margin: 0;
+        padding: 5px 10px;
+      }
+    }
+    .addnews_image_container {
+      display: flex;
+      flex-direction: column;
+      label {
+        font-weight: 500;
+        color: #fa7806;
+      }
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+
+      label {
+        font-size: 17px;
+        letter-spacing: 1px;
+        margin: 8px 0 0 5px;
+        font-weight: 500;
+      }
+
+      .age_gender {
+        display: flex;
+        // justify-content: center;
+        align-items: center;
+        .age {
+          input {
+            width: 60%;
           }
-}
+        }
+        .gender {
+          input {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
 }

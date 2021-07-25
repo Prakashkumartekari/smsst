@@ -25,3 +25,21 @@
 
        
 }
+@media only screen and (max-width: 299.98px){
+  .carousel{
+    width: 95%;
+    height: 60vh;
+    .swiper-container{
+      .swiper-slide img{
+        height: 6vh;
+        object-fit: contain;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 767.98px){
+.carousel {
+  height: 60vh;
+  //   width: 95%;
+}
+}

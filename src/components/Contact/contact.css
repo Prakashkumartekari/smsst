@@ -60,25 +60,25 @@
 .contact_section .contact_container form input::-webkit-input-placeholder {
   font-size: 18px;
   color: white;
-  letter-spacing: .5px;
+  letter-spacing: 0.5px;
 }
 
 .contact_section .contact_container form input:-ms-input-placeholder {
   font-size: 18px;
   color: white;
-  letter-spacing: .5px;
+  letter-spacing: 0.5px;
 }
 
 .contact_section .contact_container form input::-ms-input-placeholder {
   font-size: 18px;
   color: white;
-  letter-spacing: .5px;
+  letter-spacing: 0.5px;
 }
 
 .contact_section .contact_container form input::placeholder {
   font-size: 18px;
   color: white;
-  letter-spacing: .5px;
+  letter-spacing: 0.5px;
 }
 
 .contact_section .contact_container form textarea {
@@ -146,5 +146,54 @@
 
 .contact_section .contact_container form .send_button:hover {
   background-color: #f0f0f0;
+}
+
+@media only screen and (max-width: 299.98px) {
+  .contact_section .contact_container {
+    width: 100%;
+  }
+  .contact_section .contact_container form {
+    width: 90%;
+  }
+  .contact_section .contact_container form .send_button {
+    width: 45%;
+    letter-spacing: 1px;
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 767.98px) {
+  .contact_section .contact_container form {
+    width: 100%;
+  }
+  .contact_section .contact_container form .name input {
+    width: 100%;
+  }
+  .contact_section .contact_container .send_button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-weight: bolder;
+    width: 50%;
+    cursor: pointer;
+    margin: 10px auto;
+    color: #fa7806;
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 30px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+  }
+  .contact_section .contact_container .send_button:hover {
+    background-color: #f0f0f0;
+  }
 }
 /*# sourceMappingURL=contact.css.map */

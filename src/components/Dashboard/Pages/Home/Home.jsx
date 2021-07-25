@@ -37,7 +37,7 @@ const Home = () => {
                     className="navlink"
                     to={`${url}/addmember`}
                   >
-                    Add Member
+                    Member
                   </NavLink>
                 </li>
                 <li>
@@ -47,7 +47,7 @@ const Home = () => {
                     className="navlink"
                     to={`${url}/addnews`}
                   >
-                    Add News
+                    News
                   </NavLink>
                 </li>
                 <li>
@@ -57,7 +57,7 @@ const Home = () => {
                     className="navlink"
                     to={`${url}/addslider`}
                   >
-                    Add Slider
+                    Slider
                   </NavLink>
                 </li>
                 <li>
@@ -67,7 +67,7 @@ const Home = () => {
                     className="navlink"
                     to={`${url}/addtestimonial`}
                   >
-                    Add Testimonial
+                  Testimonial
                   </NavLink>
                 </li>
               </ul>

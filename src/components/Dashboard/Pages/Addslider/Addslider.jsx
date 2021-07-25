@@ -68,6 +68,8 @@ const Addslider = () => {
                   
              <div className="addslider_section">
              <div className="addnews_image_container">
+               <div className="adddnewsback">
+
             <div className="addnews_image">
               <h4>First Image</h4>
               {progress.progress1 &&
@@ -86,6 +88,8 @@ const Addslider = () => {
                 <input type="file" name="first_image" id="first_image"  onChange={(e)=>handleupload({first:"img1",image:e.target.files[0]})} />
               </div>
             </div>
+               </div>
+               <div className="adddnewsback">
 
             <div className="addnews_image">
              
@@ -105,6 +109,9 @@ const Addslider = () => {
                 <input type="file" name="second_image" id="second_image" onChange={(e)=>handleupload({first:"img2",image:e.target.files[0]})}/>
               </div>
             </div>
+            </div>
+            <div className="adddnewsback">
+
             <div className="addnews_image">
             
               <h4>Third Image</h4>
@@ -123,7 +130,7 @@ const Addslider = () => {
                 </label>
                 <input type="file" name="third_image" id="third_image" onChange={(e)=>handleupload({first:"img3",image:e.target.files[0]})}/>
               </div>
-             
+             </div>
             </div>
           <div className="btn_container">
             <button type="submit" className="btn" onClick={(e)=>{publish(e)}}>

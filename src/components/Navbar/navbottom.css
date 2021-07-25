@@ -6,7 +6,9 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: white;
+  -webkit-box-shadow: -3px -3px 7px rgba(0, 0, 0, 0.5);
+          box-shadow: -3px -3px 7px rgba(0, 0, 0, 0.5);
 }
 
 .navBottomContainer .navBottomItem ul {
@@ -22,7 +24,8 @@
   padding: 0 10px !important;
 }
 
-.navBottomContainer .navBottomItem ul .textLink, .navBottomContainer .navBottomItem ul .textLink1 {
+.navBottomContainer .navBottomItem ul .textLink,
+.navBottomContainer .navBottomItem ul .textLink1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -39,19 +42,55 @@
   cursor: pointer;
   text-decoration: none;
   font-size: 12px;
-  padding: 0 7px;
-  letter-spacing: .2px;
+  padding: 2px 7px;
+  letter-spacing: 0.2px;
   text-transform: uppercase;
-  color: #fa780694;
+  color: #fa7806;
   font-weight: 500;
 }
 
-.navBottomContainer .navBottomItem ul .textLink span, .navBottomContainer .navBottomItem ul .textLink1 span {
+.navBottomContainer .navBottomItem ul .textLink span,
+.navBottomContainer .navBottomItem ul .textLink1 span {
   font-size: 30px;
   font-weight: 800;
 }
 
-.navBottomContainer .navBottomItem ul .textLink:hover, .navBottomContainer .navBottomItem ul .textLink .active1, .navBottomContainer .navBottomItem ul .textLink1:hover, .navBottomContainer .navBottomItem ul .textLink1 .active1 {
-  color: #fa7806;
+.navBottomContainer .navBottomItem ul .textLink:hover,
+.navBottomContainer .navBottomItem ul .textLink .active1,
+.navBottomContainer .navBottomItem ul .textLink1:hover,
+.navBottomContainer .navBottomItem ul .textLink1 .active1 {
+  background-color: #fa7806;
+  color: white;
+  font-weight: bold;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+@media only screen and (max-width: 299.98px) {
+  .navBottomContainer .navBottomItem ul .textLink1 {
+    padding: 0 0 !important;
+  }
+  .navBottomContainer .navBottomItem ul .textLink,
+  .navBottomContainer .navBottomItem ul .textLink1 {
+    font-size: 10px;
+    padding: 0 5px;
+    letter-spacing: 0;
+  }
+  .navBottomContainer .navBottomItem ul .textLink span,
+  .navBottomContainer .navBottomItem ul .textLink1 span {
+    font-size: 20px;
+    font-weight: 800;
+  }
+}
+
+@media only screen and (max-width: 767.98px) {
+  .navBottomContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 /*# sourceMappingURL=navbottom.css.map */

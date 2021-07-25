@@ -1,91 +1,145 @@
-$primary_color:#fa7806;
-$secondar_color:#77bb4d;
-.active{
+$primary_color: #fa7806;
+$secondar_color: #77bb4d;
+
+.active {
+  border: 2px solid $primary_color;
+  border-radius: 7px;
+  background-color: #fff;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.6);
+}
+.navContainer {
+  margin-top: 10px;
+  background-color: white;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.6);
+  padding: 5px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .left_side {
+    display: flex;
+    align-items: center;
+    .brandName {
+      margin-left: 20px;
+      font-size: 40px;
+      h3 {
+        // color: #77bb4d;
+        color: $primary_color;
+      }
+    }
+    .logo_container {
+      height: 100px;
+      width: 100px;
+
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+      }
+    }
+  }
+  .navItem ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    text-decoration: none;
+    .textLink1 {
+      padding: 10px 15px !important;
+      border-radius: 10px;
+      margin-left: 5px;
+      cursor: pointer;
+      text-decoration: none;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      font-weight: 600;
+      font-size: 1.2rem;
+      color: #fff;
+      background-color: $primary_color;
+    }
+    .textLink {
+      cursor: pointer;
+      padding: 10px 10px;
+      text-decoration: none;
+      font-size: 1.2em;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: $primary_color;
+      font-weight: 600;
+
+      &:hover {
+        //color: #8bf34a;
         border: 2px solid $primary_color;
         border-radius: 7px;
         background-color: #fff;
-        box-shadow: 3px 3px 5px rgba(0,0,0,0.6);
+        box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.6);
+        -webkit-border-radius: 7px;
+        -moz-border-radius: 7px;
+        -ms-border-radius: 7px;
+        -o-border-radius: 7px;
+      }
     }
-.navContainer{
-          margin-top: 10px;
-          background-color: white;
-          box-shadow: 3px 3px 5px rgba(0,0,0,0.6);
-          padding:5px 20px;
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
-       
-          .left_side{
-                  display: flex;  
-                  align-items: center;
-                  .brandName{
-                            margin-left: 20px;
-                            font-size: 40px;
-                            h3{
-                              // color: #77bb4d;
-                              color:$primary_color;
-                     }
-                  }
-          .logo_container{
-                    height: 100px;
-                    width: 100px;
-                  
-                  
-                    img{
-                              height: 100%;
-                              width: 100%;
-                              object-fit: contain;
-                    }
-                    
-          }
-}
-          .navItem ul{
-                    display: flex;
-                    align-items: center;
-                    list-style-type: none;
-                    text-decoration: none;
-                    .textLink1{
-                            padding:10px 15px !important;
-                            border-radius: 10px;
-                            margin-left: 5px;
-                            cursor: pointer;
-                            text-decoration: none;
-                            letter-spacing: 1px;
-                            text-transform: uppercase;
-                            font-weight: 600;
-                            font-size: 1.2rem;
-                            color: #fff;
-                            background-color: $primary_color;
-                           
-                          
-}
-                    .textLink{
-                              cursor: pointer;
-                              padding:10px 10px;
-                              text-decoration: none;      
-                              font-size: 1.2em;
-                              letter-spacing: 1px;
-                              text-transform: uppercase;
-                              color:$primary_color;
-                              font-weight: 600;
-                            
-                              &:hover{
-                                        //color: #8bf34a;
-                                        border: 2px solid $primary_color;
-                                        border-radius: 7px;
-                                        background-color: #fff;
-                                        box-shadow: 3px 3px 5px rgba(0,0,0,0.6);
-                                        -webkit-border-radius: 7px;
-                                        -moz-border-radius: 7px;
-                                        -ms-border-radius: 7px;
-                                        -o-border-radius: 7px;
-}
-                    
-                    }
-                   
-
-          }
+  }
 }
 
+@media only screen and (max-width: 767.98px) {
+  .active {
+    border: 2px solid $primary_color;
+    border-radius: 7px;
+    background-color: #fff;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.6);
+  }
+  .navContainer {
+    margin-top: 10px;
+    background-color: none;
+    //     box-shadow: none;
+    padding: 5px 20px;
+    display: block;
 
+    //     box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3), -2px -2px 3px rgba(0, 0, 0, 0.3);
 
+    .left_side {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      .brandName {
+        margin-left: 0px;
+        font-size: 25px;
+        h3 {
+          // color: #77bb4d;
+          color: $primary_color;
+        }
+      }
+      .logo_container {
+        height: 130px;
+        width: 130px;
+
+        img {
+          height: 100%;
+          width: 100%;
+          object-fit: contain;
+        }
+      }
+    }
+    .navItem ul {
+      display: none;
+    }
+  }
+}
+@media (max-width: 991.98px) {
+  .navContainer {
+    padding: 5px 10px;
+    .left_side {
+      .brandName {
+        font-size: 20px;
+        margin-left: 10px;
+      }
+    }
+    .navItem ul {
+      .textLink {
+        padding: 0 5px;
+      }
+    }
+  }
+}

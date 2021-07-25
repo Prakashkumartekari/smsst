@@ -3,13 +3,14 @@ import "./addnews.css";
 import { FaCamera } from "react-icons/fa";
 import { db, storage } from "../../../../firebase/config";
 const Addnews = () => {
-       
+       const dt = new Date()
         const [progress, setProgress] = useState(null)
         const [news_heading, setNews_heading] = useState('')
         const [news, setNews] = useState('')
         const [url, setUrl] = useState('')
         const publish= async (e)=>{ 
               await db.collection('news').add({
+                addedDate:`${dt.getDate()}-${dt.getMonth()}-${dt.getFullYear()} ${dt.getHours()}:${dt.getMinutes()}`,
                  news_heading,
                  news,
                  url
@@ -46,6 +47,8 @@ const Addnews = () => {
       <div className="addnews_section">
         <div className="addnews_container">
           <h1>Publish News</h1>
+
+          <div className="newsbackbox">
           <div className="addnews_heading">
             <label htmlFor="addnews_heading">News Heading</label>
             <input
@@ -57,6 +60,9 @@ const Addnews = () => {
               onChange={(e) =>setNews_heading(e.target.value)}
             />
           </div>
+          </div>
+
+          <div className="newsbackbox">
         <div className="addnews">
         <label htmlFor="textarea">News</label>
         <textarea 
@@ -68,7 +74,9 @@ const Addnews = () => {
         onChange={(e)=>{setNews(e.target.value)}}
         ></textarea>
         </div>
-        
+        </div>
+      
+          <div className="newsbackbox">
           <div className="addnews_image_container">
             <div className="addnews_image">
               <h4>Image</h4>
@@ -79,7 +87,8 @@ const Addnews = () => {
                       <img src={url} alt="img1" />
               </div>
               }
-              <div className="icon_container">
+
+              <div className="news_icon_container">
                 <label htmlFor="first_image">
                   <FaCamera />
                   <h5>upload</h5>
@@ -90,7 +99,9 @@ const Addnews = () => {
               </div>
             </div>
             </div>
-          <div className="btn_container">
+          </div>
+          
+           <div className="btn_container">
             <button type="submit" className="btn" onClick={(e)=>{publish(e)}}>
               Publish
             </button>

@@ -26,4 +26,22 @@
   left: 50%;
   top: 50%;
 }
+
+@media only screen and (max-width: 299.98px) {
+  .carousel {
+    width: 95%;
+    height: 60vh;
+  }
+  .carousel .swiper-container .swiper-slide img {
+    height: 6vh;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+}
+
+@media only screen and (max-width: 767.98px) {
+  .carousel {
+    height: 60vh;
+  }
+}
 /*# sourceMappingURL=carousel.css.map */

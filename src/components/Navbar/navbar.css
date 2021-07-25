@@ -100,4 +100,70 @@
   -ms-border-radius: 7px;
   -o-border-radius: 7px;
 }
+
+@media only screen and (max-width: 767.98px) {
+  .active {
+    border: 2px solid #fa7806;
+    border-radius: 7px;
+    background-color: #fff;
+    -webkit-box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.6);
+            box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.6);
+  }
+  .navContainer {
+    margin-top: 10px;
+    background-color: none;
+    padding: 5px 20px;
+    display: block;
+    -webkit-box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3), -2px -2px 3px rgba(0, 0, 0, 0.3);
+            box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3), -2px -2px 3px rgba(0, 0, 0, 0.3);
+  }
+  .navContainer .left_side {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .navContainer .left_side .brandName {
+    margin-left: 0px;
+    font-size: 25px;
+  }
+  .navContainer .left_side .brandName h3 {
+    color: #fa7806;
+  }
+  .navContainer .left_side .logo_container {
+    height: 130px;
+    width: 130px;
+  }
+  .navContainer .left_side .logo_container img {
+    height: 100%;
+    width: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .navContainer .navItem ul {
+    display: none;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .navContainer {
+    padding: 5px 10px;
+  }
+  .navContainer .left_side .brandName {
+    font-size: 20px;
+    margin-left: 10px;
+  }
+  .navContainer .navItem ul .textLink {
+    padding: 0 5px;
+  }
+}
 /*# sourceMappingURL=navbar.css.map */

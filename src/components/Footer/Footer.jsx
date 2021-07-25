@@ -1,13 +1,11 @@
 import React from "react";
 import {FaFacebook,FaTwitter,FaInstagram} from "react-icons/fa"
-import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
-import { showModal } from "../../features/modal/Clickevent";
 import logo from "../../assets/images/logo4.png";
 import "./footer.css";
 
 function Footer() {
-  const dispatch = useDispatch();
+
   return (
     <div className="footer_section">
       <div className="footer_container">
@@ -36,12 +34,6 @@ function Footer() {
                 Member
               </Link>
             </li>
-            <li><Link className="textLink" onClick={() => dispatch(showModal())}>
-              
-              Register
-              </Link>
-            </li>
-            <li><Link className="textLink">LogIn</Link></li>
           </ul>
 
            

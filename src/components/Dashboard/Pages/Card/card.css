@@ -36,4 +36,19 @@
   font-weight: normal;
   letter-spacing: 1px;
 }
+
+@media only screen and (max-width: 767.98px) {
+  .card_wrapper {
+    width: 80%;
+  }
+  .card_wrapper .icon {
+    font-size: 100px;
+  }
+  .card_wrapper h1 {
+    font-size: 30px;
+  }
+  .card_wrapper p {
+    font-size: 25px;
+  }
+}
 /*# sourceMappingURL=card.css.map */

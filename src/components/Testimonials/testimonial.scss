@@ -1,58 +1,105 @@
+.testi_section {
+  background-color: #d0aa61;
+  padding: 50px 0;
+  .testi_container {
+    width: 80%;
+    margin: 10px auto;
 
-.testi_section{
-          background-color: #D0AA61;
-         padding: 50px 0;
-          .testi_container{
-                    width: 80%;
-                    margin: 10px auto;
-                    
-                    h1{
-                              text-align: center;
-                              text-transform: uppercase;
-                              letter-spacing: 2px;
-                              font-size: 40px;
-                              color: #fa7806;
-                              margin: 20px 0;
-                    }
-                    .mySwiper{
-                             
-                              margin: 40px 0;
-                              padding: 0 0;
-                              box-shadow: none;
-                             .myslide{
-                                       background-color: white;
-                                       padding: 50px 20px;
-                                   //     box-shadow: 2px 2px 6px rgba(0,0,0,0.5), -2px -2px 6px rgba(0,0,0,0.5);
-                                       p{
-                                                 position: relative;
-                                                 font-size: 20px;
-                                                 letter-spacing: 1px;
-                                       }
-                                       .quote_icon_left, .quote_icon_right{
-                                                color:#fa7806;
-                                                opacity: 0.3;
-                                                font-size: 30px;
-                                                
-                                       }
-                                       .quote_icon_left{
-                                      margin-right: 10px;
-                                     
+    h1 {
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 40px;
+      color: #fa7806;
+      margin: 20px 0;
+    }
+    .mySwiper {
+      margin: 40px 0;
+      padding: 0 0;
+      box-shadow: none;
+      .myslide {
+        background-color: white;
+        padding: 50px 20px;
+        //     box-shadow: 2px 2px 6px rgba(0,0,0,0.5), -2px -2px 6px rgba(0,0,0,0.5);
+        p {
+          position: relative;
+          font-size: 20px;
+          letter-spacing: 1px;
+        }
+        .quote_icon_left,
+        .quote_icon_right {
+          color: #fa7806;
+          opacity: 0.3;
+          font-size: 30px;
+        }
+        .quote_icon_left {
+          margin-right: 10px;
+        }
+        .quote_icon_right {
+          margin-left: 10px;
+          position: absolute;
+          bottom: -10px;
+        }
+        .quote_name {
+          margin-top: 20px;
+          font-size: 25px;
+          letter-spacing: 1.5px;
+          text-transform: capitalize;
+        }
+      }
+    }
+  }
 }
-                                    .quote_icon_right{
-                                              margin-left: 10px;
-                                              position: absolute;
-                                              bottom: -10px;
-                                            
-                                    }
-                                    .quote_name{
-                                              margin-top: 20px;
-                                              font-size: 25px;
-                                              letter-spacing: 1.5px;
-                                              text-transform: capitalize;
-                                              
-                                    }
-                             }
-                    }
+@media only screen and (max-width: 767.98px) {
+  .testi_section {
+    background-color: #d0aa61;
+    padding: 30px 0;
+    .testi_container {
+      width: 98%;
+      margin: 10px auto;
 
+      h1 {
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-size: 35px;
+        color: #fa7806;
+        margin: 20px 0;
+      }
+      .mySwiper {
+        margin: 40px 0;
+        padding: 0 0;
+        .myslide {
+          background-color: white;
+          padding: 50px 30px;
+          text-align: center;
+          p {
+            position: relative;
+            font-size: 20px;
+            letter-spacing: 1px;
           }
+          .quote_icon_left,
+          .quote_icon_right {
+            color: #fa7806;
+            opacity: 0.3;
+            font-size: 60px;
+          }
+          .quote_icon_left {
+            margin-right: 10px;
+          }
+          .quote_icon_right {
+            margin-left: 10px;
+            position: absolute;
+            bottom: -30px;
+          }
+          .quote_name {
+            margin-top: 20px;
+            font-size: 25px;
+            letter-spacing: 1.5px;
+            text-transform: capitalize;
+          }
+        }
+      }
+    }
+  }
 }
