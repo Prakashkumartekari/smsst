@@ -1,18 +1,35 @@
 
-
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;700&family=Mukta:wght@200;300;400&display=swap');
 
 .achieve_section{
+          width: 100%;
           $primary_color:#fa7806;
           $secondar_color:#D0AA61;
           background-color:$secondar_color;
           padding: 30px 0;
           .title{
+            position: relative;
+          //  border-bottom:2px solid $primary_color;
           text-align: center;
           color:white;
           // color: $secondar_color;
           padding: 10px;
           font-size: 40px;
           text-transform: uppercase;
+          &::after{
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            content: "";
+            width:20%;
+            height: 5px;
+            background-color: $primary_color;
+            -webkit-transform: translateX(-50%);
+            -moz-transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+            -o-transform: translateX(-50%);
+}
           
 }
 .achievement_1,.achievement_2,.achievement_3,.achievement_4{
@@ -35,6 +52,8 @@
                     flex: 1;
                     margin:4% 20px;
                     h1{
+                            font-family: 'Hind', sans-serif;
+                            font-weight: 700;
                           text-transform: capitalize;  
                             display: flex;
                             justify-content: center;
@@ -43,7 +62,10 @@
                           letter-spacing: 4px;
                     }
                     p{
-                             letter-spacing: 1px;
+                      font-family: 'Mukta', sans-serif;
+                            font-weight: 400;
+                            font-size: 20px;
+                             letter-spacing: 2px;
                              width: 80%;
                              display: flex;
                             margin: auto;
@@ -81,6 +103,11 @@
 
 @media only screen and (max-width: 767.98px){
   .achieve_section {
+    .title{
+      &::after{
+        width: 50%;
+    }
+  }
     .achievement_1,
     .achievement_2,
     .achievement_3,
@@ -120,4 +147,13 @@
       flex-direction: column-reverse;
     }
   }
+}
+@media only screen and (max-width: 350.98px){
+  .achieve_section {
+    .title{
+      &::after{
+        width: 70%;
+    }
+  }
+}
 }

@@ -10,7 +10,7 @@ function Achievements() {
   return (
     <>
       <div className="achieve_section">
-        <h1 className="title">Achievements</h1>
+        <h1 className="title">उपलब्धियों</h1>
         <div className="achievementsWrapper">
           <div className="achievement_1">
             <div className="img_container">
@@ -20,11 +20,9 @@ function Achievements() {
               />
             </div>
             <div className="content_container">
-              <h1>Ambulance Help</h1>
+              <h1>एम्बुलेंस सहायता</h1>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Reiciendis possimus accusantium odio repellendus ipsa magni
-                similique quaerat nam incidunt accusamus?
+              श्री मानव समिति ट्रस्ट द्वारा विभिन्न जगहों तक एम्बुलेंस सहायता पहुंचाई गई |
               </p>
               <div className="counter_container">
                 <div className="first_counter">
@@ -56,11 +54,9 @@ function Achievements() {
 
           <div className="achievement_2">
             <div className="content_container">
-              <h1>Uniform Distribution</h1>
+              <h1>वर्दी वितरण</h1>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Reiciendis possimus accusantium odio repellendus ipsa magni
-                similique quaerat nam incidunt accusamus?
+              श्री मानव समिति ट्रस्ट द्वारा विभिन्न स्कूलों में वर्दी वितरण किया गया |
               </p>
               <div className="counter_container">
                 <div className="first_counter">
@@ -102,11 +98,9 @@ function Achievements() {
               />
             </div>
             <div className="content_container">
-              <h1>Plantation</h1>
+              <h1>वृक्षारोपण</h1>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Reiciendis possimus accusantium odio repellendus ipsa magni
-                similique quaerat nam incidunt accusamus?
+              श्री मानव समिति ट्रस्ट द्वारा विभिन्न जगहों पर वृक्षारोपण किया गया |
               </p>
               <div className="counter_container">
                 <div className="first_counter">
@@ -137,11 +131,9 @@ function Achievements() {
           <div className="achievement_4">
            
             <div className="content_container">
-              <h1>Antim Sanskar</h1>
+              <h1>अंतिम संस्कार</h1>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Reiciendis possimus accusantium odio repellendus ipsa magni
-                similique quaerat nam incidunt accusamus?
+              श्री मानव सेवा समिति ट्रस्ट द्वारा विभिन्न जगहों पर  किये गये अंतिम संस्कार |
               </p>
               <div className="counter_container">
                 <div className="first_counter">

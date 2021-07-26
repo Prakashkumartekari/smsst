@@ -1,5 +1,5 @@
 import {createAsyncThunk, createSlice} from '@reduxjs/toolkit'
-import { db } from '../../firebase/config';
+import { db, storage } from '../../firebase/config';
 const dt = new Date()
 export const addmember = createAsyncThunk(
           "storage/addmember",
@@ -31,12 +31,14 @@ export const addmember = createAsyncThunk(
 const storageSlice = createSlice({
           name:'storage',
           initialState:{
-                    loading:false
+                    loading:false,
+                    member:[]
           },
           reducers:{
                     addnews:(state,action)=>{
 
-                    }
+                    },
+                  
           },
           extraReducers:{
                     [addmember.pending]:(state)=>{

@@ -12,9 +12,10 @@ function AllMembers() {
     })
     },
    [])
+  
   return (
     <>
-    
+    {members.length > 0 ?(
       <div className="member_wrapper ">
           <div className="member_container">
       {members.map(member =>
@@ -63,6 +64,15 @@ function AllMembers() {
       )}
       </div>
       </div>
+      ):(<div className="loader_container">
+          <div className="loader_wrap">
+          <div className="loader"></div>
+          <div>
+            <h3>Loading Members.Please Wait...</h3>
+          </div>
+          </div>
+      </div>)
+    }
     </>
   );
 }
