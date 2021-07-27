@@ -1,6 +1,7 @@
 import Navbar from './Navbar/Navbar'
 import Home from './Home/Home'
 import Contact from './Contact/Contact'
+import ContactDetail from './Contact/ContactDetail'
 import Member from './Member/Member'
 import AllMembers from './Member/AllMembers'
 import News from './News/News'
@@ -15,10 +16,11 @@ import Allnews from './News/Allnews'
 import Dashboard from "./Dashboard/Dashboard"
 import Navbottom from "./Navbar/Navbottom"
 import NewsDetail from "./News/NewsDetail"
+import Alert from "./Modal/Alert"
 
 export {Navbar,Home,Contact,AllMembers,Member,News,Modal,Carousel,
           Achievements,Donation,DonationDetail,Testimonials,Footer,
-          Allnews,Dashboard,Navbottom,NewsDetail}
+          Allnews,Dashboard,Navbottom,NewsDetail,ContactDetail,Alert}
 
 
 

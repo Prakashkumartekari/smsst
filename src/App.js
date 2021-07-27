@@ -1,6 +1,6 @@
 import React from 'react';
-import {Navbar,Home,Contact,AllMembers, 
-  Modal, DonationDetail,Footer,Allnews,Dashboard, Navbottom,NewsDetail
+import {Navbar,Home,AllMembers, 
+  Modal, DonationDetail,Footer,Allnews,Dashboard, Navbottom,NewsDetail, ContactDetail, Alert
 } from "./components/index"
 
 import {BrowserRouter, Route, Switch, } from 'react-router-dom'
@@ -45,7 +45,9 @@ function App() {
    </div>
     <Switch>
       <Route exact path="/" component={Home}/>
-      <Route path="/contact" component={Contact}/>
+     
+      <Route path="/contact" component={ContactDetail}/>
+    
       <Route path="/allmembers" component={AllMembers}/>
       <Route path="/news" component={Allnews}/>
       <Route path="/donationdetail" component={DonationDetail}/>
@@ -53,8 +55,7 @@ function App() {
       <Route exact path="/newsdetail/:id" component={NewsDetail}/>
     </Switch>
     <Footer/>
-   
-
+    <Alert/>
     </BrowserRouter>
     
     </div>

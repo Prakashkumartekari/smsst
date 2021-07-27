@@ -2,7 +2,10 @@ import React, { useState } from "react";
 import "./addnews.css";
 import { FaCamera } from "react-icons/fa";
 import { db, storage } from "../../../../firebase/config";
+import { showAlert } from "../../../../features/modal/Clickevent";
+import { useDispatch } from "react-redux";
 const Addnews = () => {
+  const dispatch = useDispatch()
        const dt = new Date()
         const [progress, setProgress] = useState(null)
         const [news_heading, setNews_heading] = useState('')
@@ -14,7 +17,7 @@ const Addnews = () => {
                  news_heading,
                  news,
                  url
-               })
+               }).then(()=>dispatch(showAlert("News Added Successfully"))).catch(error=>console.log(error))
               setNews('')
               setNews_heading('')
         }

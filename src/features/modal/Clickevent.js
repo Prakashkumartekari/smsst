@@ -1,10 +1,11 @@
 import { createSlice } from "@reduxjs/toolkit";
-
 export const modalSlice = createSlice({
           name:"modal",
           initialState:{
                     value:false,
-                    type:""
+                    type:"",
+                    alert:false,
+                    text:""
           },
           reducers:{
                     showModal:(state,action)=>{
@@ -13,8 +14,15 @@ export const modalSlice = createSlice({
                     },
                     closeModal:(state)=>{
                               state.value=false
+                    },
+                    showAlert:(state,action)=>{
+                              state.alert=true
+                              state.text=action.payload
+                    },
+                    closeAlert:(state)=>{
+                              state.alert =false
                     }
           }
 })
-export const {showModal,closeModal} = modalSlice.actions
+export const {showModal,closeModal,showAlert,closeAlert} = modalSlice.actions
 export default modalSlice.reducer

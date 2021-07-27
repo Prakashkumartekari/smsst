@@ -2,7 +2,10 @@ import React, { useState } from 'react'
 import { db, storage } from '../../../../firebase/config'
 import {FaCamera} from "react-icons/fa"
 import "./addslider.css"
+import { useDispatch } from 'react-redux'
+import { showAlert } from '../../../../features/modal/Clickevent'
 const Addslider = () => {
+  const dispatch = useDispatch()
      const [progress, setProgress] = useState([{
        progress1:null,
        progress2:null,
@@ -18,7 +21,7 @@ const Addslider = () => {
                 url1,
                 url2,
                 url3,
-              })
+              }).then(()=>dispatch(showAlert("slider Added Successfully"))).catch(error=>console.log(error))
               setProgress({url1:'',
             url2:'',
             url3:''})

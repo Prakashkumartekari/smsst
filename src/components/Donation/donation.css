@@ -35,8 +35,8 @@
   font-weight: bold;
   letter-spacing: 2px;
   text-transform: uppercase;
-  -webkit-box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.8);
-          box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.8);
+  -webkit-box-shadow: 0 2px 7px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 2px 7px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;

@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import "./allnews.css";
 import {Link} from 'react-router-dom'
 import { db } from "../../firebase/config";
+import Alert from "../Modal/Alert";
 function Allnews() {
   const [news, setNews] = useState(null)
   useEffect(() => {
@@ -18,7 +19,7 @@ function Allnews() {
 
   return (
     <>
-   
+ 
      {news?(
       <div className="news_wrapper ">
         <div className="news_container">

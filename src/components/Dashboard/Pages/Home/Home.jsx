@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { NavLink, useLocation, useRouteMatch } from "react-router-dom";
 import Card from "../Card/Card";
 import { FiUserPlus, FiUser } from "react-icons/fi";
@@ -6,17 +6,33 @@ import { ImNewspaper } from "react-icons/im";
 
 import "./home.css";
 import { Addmember } from "../..";
+import { db } from "../../../../firebase/config";
 
 
 
 const Home = () => {
   const { url } = useRouteMatch();
   const location =useLocation()
-  console.log(location)
+ const [member, setMember] = useState([])
+ const [news, setNews] = useState([])
+  useEffect(() => {
+    db.collection('members').get().then(docs=>{
+          const memberlength =[]
+          docs.docs.map(snap=>memberlength.push(snap.data()))
+       setMember(memberlength)
+        }) 
+        db.collection('news').get().then(docs=>{
+          const newslength =[]
+          docs.docs.map(snap=>newslength.push(snap.data()))
+          setNews(newslength)
+        })
+        
+      }, [])
+  
   const details = [
-    { text: "member", no: 1224, icon: <FiUserPlus /> },
+    { text: "Member's", no:member.length, icon: <FiUserPlus style={{color:"orange"}}/> },
+    { text: "Total News", no:news.length,icon: <ImNewspaper style={{color:"tomato"}}/> },
     { no: 12214, text: "visitor", icon: <FiUser /> },
-    { text: "Total News", no: 12214, icon: <ImNewspaper /> },
   ];
   return (
     <>

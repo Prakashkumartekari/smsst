@@ -1,6 +1,8 @@
 import React from 'react'
+import { useDispatch } from 'react-redux'
 import "./addtestimonial.css"
 const Addtestimonial = () => {
+  const dispatch = useDispatch()
           return (
                     <>
                             <div className="addtestimonial_section">

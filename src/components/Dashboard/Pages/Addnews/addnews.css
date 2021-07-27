@@ -122,6 +122,7 @@
 
 .addnews_section .addnews_container .addnews_image_container label {
   font-weight: 500;
+  padding: 5px 10px;
   color: #fa7806;
 }
 
@@ -172,6 +173,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  border-radius: 5px;
   background-color: #292623fb;
   font-size: 20px;
   cursor: pointer;

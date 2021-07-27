@@ -10,7 +10,7 @@ function Home() {
       <Donation/>
       <Member/>
       <Testimonials/>
-      <Contact/>
+      <Contact text={"Contact Us"}/>
 
      
     </>
