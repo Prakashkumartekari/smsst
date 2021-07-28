@@ -8,6 +8,8 @@ import "./addmember.css";
 const Addmember = () => {
   const dispatch = useDispatch();
   const loading = useSelector((state) => state.storageReducer.loading);
+  const [error, setError] = useState(false)
+  const type = ["jpeg","jpg","png"]
   const [progress, setProgress] = useState(null)
   const [url, setUrl] = useState('')
   const [formdata, setFormdata] = useState([
@@ -26,6 +28,7 @@ const Addmember = () => {
     },
   ]);
   const handleupload = (data)=>{
+    if(type.includes(data.file.type && data.file.size)){setError(false)
     const uploadTask = storage.ref(`member/${data.file.name}`).put(data.file);
     uploadTask.on(
       "state_changed",
@@ -44,6 +47,9 @@ const Addmember = () => {
         })
       }
     )
+  }else{
+    setError(true)
+  }
   }
   const hadleChange = (event) => {
 
@@ -197,6 +203,7 @@ const Addmember = () => {
           <div className="addmember_image_container">
             <div className="addmember_image">
               <h4>Image</h4>
+              {error && <div style={{color:"red",padding:"10px 0"}}>File Must be JPEG/JPG/PNG or size less than 2 MB </div>}
           {progress &&
            <div className="progressbar" style={{width:`${progress}+"%"`}}></div>}
            {url !== '' &&
@@ -216,7 +223,6 @@ const Addmember = () => {
               </div>
             </div>
             </div>
-          
           {loading && <div className="loader"></div>}
           <div className="btn_container">
             <button type="submit" className="btn">
