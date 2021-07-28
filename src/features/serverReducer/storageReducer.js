@@ -1,5 +1,5 @@
 import {createAsyncThunk, createSlice} from '@reduxjs/toolkit'
-import { db, storage } from '../../firebase/config';
+import { db} from '../../firebase/config';
 const dt = new Date()
 export const addmember = createAsyncThunk(
           "storage/addmember",

@@ -39,8 +39,8 @@ const Home = () => {
       <div className="admin_section">
         <div className="admin_home_container">
           <div className="card_container">
-            {details.map((detail) => (
-              <Card text={detail.text} no={detail.no} icon={detail.icon} />
+            {details.map((detail,i) => (
+              <Card text={detail.text} no={detail.no} icon={detail.icon} key={i}/>
             ))}
           </div>
           <div className="nav_container">

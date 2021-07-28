@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { FaCamera } from "react-icons/fa";
 import { useDispatch, useSelector } from "react-redux";
+import { showAlert } from "../../../../features/modal/Clickevent";
 import { addmember } from "../../../../features/serverReducer/storageReducer";
 import { storage } from "../../../../firebase/config";
 import "./addmember.css";
@@ -9,7 +10,6 @@ const Addmember = () => {
   const dispatch = useDispatch();
   const loading = useSelector((state) => state.storageReducer.loading);
   const [error, setError] = useState(false)
-  const type = ["jpeg","jpg","png"]
   const [progress, setProgress] = useState(null)
   const [url, setUrl] = useState('')
   const [formdata, setFormdata] = useState([
@@ -28,7 +28,10 @@ const Addmember = () => {
     },
   ]);
   const handleupload = (data)=>{
-    if(type.includes(data.file.type && data.file.size)){setError(false)
+  const type = ["image/jpeg","image/jpg","image/png"]
+    console.log(data.file.size,data.file.type)
+    if(type.includes(data.file.type) && data.file.size <=2000000){
+    setError(false)
     const uploadTask = storage.ref(`member/${data.file.name}`).put(data.file);
     uploadTask.on(
       "state_changed",
@@ -58,7 +61,8 @@ const Addmember = () => {
   const submit = (e) => {
     e.preventDefault();
     if(url !== ''){
-      dispatch(addmember({formdata,url}));
+      dispatch(addmember({formdata,url}))
+      dispatch(showAlert("Member Added Successfully"))
       setUrl('')
       setFormdata({
         memberid: "",

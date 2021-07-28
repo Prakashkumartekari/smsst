@@ -45,11 +45,9 @@ function App() {
    </div>
     <Switch>
       <Route exact path="/" component={Home}/>
-     
       <Route path="/contact" component={ContactDetail}/>
-    
       <Route path="/allmembers" component={AllMembers}/>
-      <Route path="/news" component={Allnews}/>
+      <Route exact path="/news" component={Allnews}/>
       <Route path="/donationdetail" component={DonationDetail}/>
       <Route path="/admin" component={Dashboard}/>
       <Route exact path="/newsdetail/:id" component={NewsDetail}/>

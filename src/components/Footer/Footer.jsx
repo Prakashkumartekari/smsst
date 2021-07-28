@@ -54,7 +54,7 @@ function Footer() {
             width="300"
             height="200"
             style={{border:0}}
-            allowfullscreen="true"
+            allowFullScreen={true}
             loading="lazy"
             title="seva map"
           ></iframe>

@@ -2,20 +2,25 @@ import React, { useEffect,useState } from "react";
 import {db} from "../../firebase/config"
 import "./allmember.css"
 
-
 function AllMembers() {
     const [members, setMembers] = useState([])
+    const [member, setMember] = useState(false)
+    const [loading,setLoading] = useState(true)
   useEffect(  () => {
    const get =  db.collection("members").get()
     get.then(snapshot =>{
+      if(snapshot.empty){
+        setLoading(false)
+        setMember(true)
+      }
+      if(!snapshot.empty) setLoading(false)
      setMembers(snapshot.docs.map(doc =>doc.data()))
     })
     },
    [])
-  
   return (
     <>
-    {members.length > 0 ?(
+    {members.length > 0 &&
       <div className="member_wrapper ">
           <div className="member_container">
       {members.map(member =>
@@ -64,17 +69,31 @@ function AllMembers() {
       )}
       </div>
       </div>
-      ):(<div className="loader_container">
+}
+{member &&
+  <div className="loader_container">
+  <div className="loader_wrap">
+  <div>
+    <div style={{fontSize:"50px",fontWeight:700,margin:"0 auto 20px auto",textAlign:"center",color:'tomato'}}>Oops..</div>
+    <h3>Members not found in Database.</h3>
+  </div>
+  </div>
+</div>
+}
+{loading &&
+      <div className="loader_container">
           <div className="loader_wrap">
           <div className="loader"></div>
           <div>
             <h3>Loading Members.Please Wait...</h3>
           </div>
           </div>
-      </div>)
-    }
+      </div>
+      }
     </>
-  );
+      )
+    
+  
 }
 
 export default AllMembers;

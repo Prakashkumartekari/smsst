@@ -25,7 +25,7 @@ const Addslider = () => {
     size3:false
   });
 
-  const type = ["image/jpeg", "<image/jpg", "image/png"];
+  const type = ["image/jpeg", "image/jpg", "image/png"];
   const publish = (e) => {
     e.preventDefault();
     db.collection("slider")

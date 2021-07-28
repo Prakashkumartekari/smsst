@@ -3,9 +3,8 @@ import React, { useEffect, useState } from "react";
 import "./allnews.css";
 import {Link} from 'react-router-dom'
 import { db } from "../../firebase/config";
-import Alert from "../Modal/Alert";
 function Allnews() {
-  const [news, setNews] = useState(null)
+  const [news, setNews] = useState(false)
   useEffect(() => {
     db.collection('news').get().then(snapshot=>{
       const docarray =[]

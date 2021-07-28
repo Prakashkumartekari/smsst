@@ -1,6 +1,6 @@
 import React from 'react'
 import "./contactDetail.css"
-import {FaWhatsapp,FaMobile,FaMailBulk,FaMailchimp} from "react-icons/fa"
+import {FaWhatsapp,FaMobile,FaMailBulk} from "react-icons/fa"
 import Contact from './Contact'
 const Card =(props)=>{
           return (
